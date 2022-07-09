@@ -18,6 +18,16 @@ for(let num of nums) {
     })
 };
 
+// adds decimal to number
+
+deci.addEventListener("click", function() {
+    calc.value = `${calc.value}${deci.innerText}`
+})
+
+// switch positive to negative
+
+
+
 // math functions
 
 const sum = function() {
