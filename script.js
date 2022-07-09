@@ -7,6 +7,7 @@ const plusSign = document.querySelector(".plus");
 const minusSign = document.querySelector(".minus");
 const divideSign = document.querySelector(".divide");
 const multiplySign = document.querySelector(".multiply");
+const clrBtn = document.querySelector(".clear");
 let calcCounter = 0;
 let x;
 let y;
@@ -21,12 +22,20 @@ for(let num of nums) {
 // adds decimal to number
 
 deci.addEventListener("click", function() {
-    calc.value = `${calc.value}${deci.innerText}`
+    calc.value = `${calc.value}${deci.innerText}`;
 })
 
 // switch positive to negative
 
+changeNegative.addEventListener("click", function() {
+    calc.value = `-${calc.value}`
+})
 
+// clears input
+
+clrBtn.addEventListener("click", function() {
+    calc.value = "";
+})
 
 // math functions
 
